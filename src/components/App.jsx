@@ -12,6 +12,9 @@ function App() {
         <DiceContainer />
       </div>
       <div className={styles.wrapper}>
+        <p>Scores</p>
+      </div>
+      <div className={styles.wrapper}>
         <Button>Roll Dice</Button>
         <Button>Reset</Button>
         <Button>Options</Button>
