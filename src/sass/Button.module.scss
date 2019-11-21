@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  width: 150px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  border: 1px solid #09D3AC;
+  border-radius: 0.5rem;
+  color: #09D3AC;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  transition: .2s;
+  cursor: pointer;
+
+  @media(min-width: 1025px) {
+    font-size: 1.2rem;
+    width: 200px;
+
+    &:hover {
+      background-color: #09D3AC;
+      color: #282C34;
+    }
+  }
+}
