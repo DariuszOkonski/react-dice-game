@@ -1,0 +1,11 @@
+.dice {
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+@media (min-width: 1025px) {
+  .dice {
+    font-size: 5rem;
+  }
+}
+/*# sourceMappingURL=Dice.module.css.map */

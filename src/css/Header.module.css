@@ -8,4 +8,10 @@
   padding-bottom: 0.5rem;
   font-size: 1.4rem;
 }
+
+@media (min-width: 1025px) {
+  .header {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=Header.module.css.map */

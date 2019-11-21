@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,MAAM;CAKf;;AAHC,MAAM,EAAC,SAAS,EAAE,MAAM;EAJ1B,AAAA,KAAK,CAAC;IAKF,SAAS,EAAE,IAAI;GAElB",
+    "sources": [
+        "../sass/Dice.module.scss"
+    ],
+    "names": [],
+    "file": "Dice.module.css"
+}
