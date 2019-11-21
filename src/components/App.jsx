@@ -5,11 +5,15 @@ import Header from './Header';
 
 function App() {
   return (
-    <div className={styles.wrapper}>
-      <Header />
-
-      <DiceContainer />
-    </div>
+    <>
+      <div className={styles.wrapper}>
+        <Header />
+        <DiceContainer />
+      </div>
+      <div className={styles.wrapper}>
+        <button>Hello</button>
+      </div>
+    </>
   );
 }
 
