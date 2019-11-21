@@ -2,6 +2,7 @@ import React from 'react';
 import DiceContainer from './DiceContainer';
 import styles from '../css/App.module.css';
 import Header from './Header';
+import Button from './Button';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <DiceContainer />
       </div>
       <div className={styles.wrapper}>
-        <button>Hello</button>
+        <Button>Roll Dice</Button>
+        <Button>Reset</Button>
+        <Button>Options</Button>
       </div>
     </>
   );
