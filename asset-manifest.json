@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-dice-game/static/css/main.971f5ffa.chunk.css",
-    "main.js": "/react-dice-game/static/js/main.04cb7127.chunk.js",
-    "main.js.map": "/react-dice-game/static/js/main.04cb7127.chunk.js.map",
+    "main.js": "/react-dice-game/static/js/main.76942f70.chunk.js",
+    "main.js.map": "/react-dice-game/static/js/main.76942f70.chunk.js.map",
     "runtime-main.js": "/react-dice-game/static/js/runtime-main.82606ec6.js",
     "runtime-main.js.map": "/react-dice-game/static/js/runtime-main.82606ec6.js.map",
     "static/js/2.91edf1c1.chunk.js": "/react-dice-game/static/js/2.91edf1c1.chunk.js",
     "static/js/2.91edf1c1.chunk.js.map": "/react-dice-game/static/js/2.91edf1c1.chunk.js.map",
     "index.html": "/react-dice-game/index.html",
-    "precache-manifest.a4cd494117fb55086008baaba1fcfe64.js": "/react-dice-game/precache-manifest.a4cd494117fb55086008baaba1fcfe64.js",
+    "precache-manifest.dd4775638f66f417ce6d9e4d8bc4ace5.js": "/react-dice-game/precache-manifest.dd4775638f66f417ce6d9e4d8bc4ace5.js",
     "service-worker.js": "/react-dice-game/service-worker.js",
     "static/css/main.971f5ffa.chunk.css.map": "/react-dice-game/static/css/main.971f5ffa.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.82606ec6.js",
     "static/js/2.91edf1c1.chunk.js",
     "static/css/main.971f5ffa.chunk.css",
-    "static/js/main.04cb7127.chunk.js"
+    "static/js/main.76942f70.chunk.js"
   ]
 }
