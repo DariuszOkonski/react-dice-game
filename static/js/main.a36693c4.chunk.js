@@ -1,2 +1,0 @@
-(this["webpackJsonp015-dice-game"]=this["webpackJsonp015-dice-game"]||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var a=t(0),c=t.n(a),r=t(2),i=t.n(r);t(8);var u=function(){return c.a.createElement("div",null,c.a.createElement("h1",null,"Dice game"))};i.a.render(c.a.createElement(u,null),document.getElementById("root"))}},[[3,1,2]]]);
-//# sourceMappingURL=main.a36693c4.chunk.js.map
