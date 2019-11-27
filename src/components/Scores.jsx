@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from '../css/Scores.module.css';
 
-const Scores = () => {
+const Scores = ({ currentScore, totalScore, rolls }) => {
   return (
     <div className={styles.container}>
-      <p className={styles.paragraph}>Current score: 1</p>
-      <p className={styles.paragraph}>Total score: 2</p>
-      <p className={styles.paragraph}>Rolls: 3</p>
+      <p className={styles.paragraph}>Current score: {currentScore}</p>
+      <p className={styles.paragraph}>Total score: {totalScore}</p>
+      <p className={styles.paragraph}>Rolls: {rolls}</p>
     </div>
   );
 }
