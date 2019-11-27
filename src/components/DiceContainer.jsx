@@ -1,14 +1,14 @@
 import React from 'react';
 import Dice from './Dice';
 import styles from '../css/DiceContainer.module.css';
+import uuid from 'uuid/v1';
 
-const DiceContainer = () => {
+const DiceContainer = ({ dices }) => {
   return (
     <div className={styles.container}>
-      <Dice number="one" />
-      <Dice number="two" />
-      <Dice number="three" />
-      <Dice number="four" />
+      {
+        dices.map(dice => <Dice key={uuid()} number={dice.number} />)
+      }
     </div>
   );
 }
