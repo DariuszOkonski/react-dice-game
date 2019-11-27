@@ -85,7 +85,7 @@ class Game extends Component {
     return (
       <div>
         <div className={styles.wrapper}>
-          <Header />
+          <Header dicesNumber={this.props.dices} />
           <DiceContainer dices={dices} rolling={rolling} />
         </div>
         <div className={styles.wrapper}>
