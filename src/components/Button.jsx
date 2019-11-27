@@ -3,7 +3,11 @@ import styles from '../css/Button.module.css';
 
 const Button = (props) => {
   return (
-    <button className={styles.button}>
+    <button
+      onClick={props.click}
+      className={styles.button}
+      disabled={props.rolling}
+    >
       {props.children}
     </button>
   );
