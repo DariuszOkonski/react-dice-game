@@ -12,10 +12,10 @@ function App() {
       <div className={styles.container}>
         <Switch>
           <Route exact path='/' component={Options} />
-          <Route exact path='/1' component={Game} />
-          <Route exact path='/2' component={Game} />
-          <Route exact path='/3' component={Game} />
-          <Route exact path='/4' component={Game} />
+          <Route exact path='/game1' component={() => <Game dices={1} />} />
+          <Route exact path='/game2' component={() => <Game dices={2} />} />
+          <Route exact path='/game3' component={() => <Game dices={3} />} />
+          <Route exact path='/game4' component={() => <Game dices={4} />} />
           <Route component={Error} />
         </Switch>
 
