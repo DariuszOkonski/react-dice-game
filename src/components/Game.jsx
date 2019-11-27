@@ -18,44 +18,91 @@ const dicesArray = [
 class Game extends Component {
   state = {
     dices: [],
-
-    currentScore: 11,
-    totalScore: 12,
-    rolls: 13,
+    currentScore: 0,
+    totalScore: 0,
+    rolls: 0,
+    rolling: false,
   }
 
-  componentDidMount() {
-    this.drawDices();
-  }
+  drawDices() {
+    this.setState({
+      rolling: true,
+    })
 
-  drawDices = () => {
     const dices = [];
     for (let i = 0; i < this.props.dices; i++) {
       dices.push(dicesArray[Math.floor(Math.random() * dicesArray.length)])
     }
 
+    this.countScores(dices);
+
     this.setState({
       dices
     })
+
+    setTimeout(() => {
+      this.setState({
+        rolling: false
+      })
+    }, 800);
   }
 
+  countScores(dices) {
+    let currentScore = 0;
+    dices.forEach(dice => {
+      currentScore += dice.points
+    })
+
+    this.setState(prevState => ({
+      currentScore,
+      totalScore: prevState.totalScore + currentScore,
+      rolls: prevState.rolls + 1,
+    }))
+  }
+
+  reset() {
+    this.setState({
+      dices: [],
+      currentScore: 0,
+      totalScore: 0,
+      rolls: 0,
+    })
+  }
+
+  handleRollDice = () => {
+    this.drawDices();
+  }
+
+  handleReset = () => {
+    this.reset();
+  }
 
   render() {
-    const { dices } = this.state;
+    const { dices, rolling } = this.state;
+
+    const linkStyle = rolling ? { visibility: 'hidden' } : { visibility: 'visible' }
 
     return (
       <div>
         <div className={styles.wrapper}>
           <Header />
-          <DiceContainer dices={dices} />
+          <DiceContainer dices={dices} rolling={rolling} />
         </div>
         <div className={styles.wrapper}>
-          <Scores />
+          <Scores {...this.state} />
         </div>
         <div className={styles.wrapper}>
-          <Button>Roll Dice</Button>
-          <Button>Reset</Button>
-          <Link className={buttonStyles.button} to='/'>Options</Link>
+          <Button
+            click={this.handleRollDice}
+            rolling={rolling}
+          >{rolling ? 'Rolling...' : 'Roll Dice'}</Button>
+
+          <Button
+            click={this.handleReset}
+            rolling={rolling}
+          >Reset</Button>
+
+          <Link style={linkStyle} className={buttonStyles.button} to='/'>Options</Link>
         </div>
       </div>
     );
