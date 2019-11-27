@@ -3,6 +3,7 @@ import DiceContainer from './DiceContainer';
 import styles from '../css/Game.module.css';
 import Header from './Header';
 import Button from './Button';
+import Scores from './Scores';
 
 const Game = () => {
   return (
@@ -12,7 +13,7 @@ const Game = () => {
         <DiceContainer />
       </div>
       <div className={styles.wrapper}>
-        <p>Scores</p>
+        <Scores />
       </div>
       <div className={styles.wrapper}>
         <Button>Roll Dice</Button>
