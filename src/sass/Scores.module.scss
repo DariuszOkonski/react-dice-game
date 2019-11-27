@@ -1,0 +1,16 @@
+.container {
+  padding: 0 2rem;
+
+  .paragraph {
+    font-size: 1.2rem;
+    padding: 0.2rem 0;
+    text-align: left;
+  }
+
+  @media(min-width: 1025px) {
+    .paragraph {
+      font-size: 1.4rem;
+      padding: 0.5rem 0;
+    }
+  }
+}
